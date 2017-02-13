@@ -13,7 +13,7 @@ import android.webkit.MimeTypeMap;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
-import com.newtra.motivator.Beans.Book;
+import com.newtra.motivator.beans.Book;
 import com.newtra.motivator.MyIntentServiceDownload;
 import com.newtra.motivator.R;
 import com.newtra.motivator.Utility;

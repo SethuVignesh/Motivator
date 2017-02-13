@@ -10,13 +10,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
-import android.widget.Toast;
 
-import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.MobileAds;
-import com.newtra.motivator.Beans.VideoList;
+import com.newtra.motivator.beans.VideoList;
 import com.newtra.motivator.R;
 import com.newtra.motivator.activity.VideoListActivity;
 import com.newtra.motivator.adapters.VideoListAdapter;

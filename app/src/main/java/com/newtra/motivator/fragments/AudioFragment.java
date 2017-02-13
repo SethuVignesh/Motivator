@@ -15,9 +15,9 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
 
-import com.newtra.motivator.AudioModule.DownloadAudio;
-import com.newtra.motivator.AudioModule.RefreshListView;
-import com.newtra.motivator.Beans.Audio;
+import com.newtra.motivator.audiomodule.DownloadAudio;
+import com.newtra.motivator.audiomodule.RefreshListView;
+import com.newtra.motivator.beans.Audio;
 import com.newtra.motivator.R;
 import com.newtra.motivator.Utility;
 import com.newtra.motivator.adapters.AudioListAdapter;
@@ -157,7 +157,7 @@ public class AudioFragment extends Fragment implements RefreshListView {
 
 
     @Override
-    public void refreshList(Context context, String caller) {
+    public void RefreshList(Context context, String caller) {
         populateListView();
 
     }

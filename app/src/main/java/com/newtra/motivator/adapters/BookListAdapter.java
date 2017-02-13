@@ -9,7 +9,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 
-import com.newtra.motivator.Beans.Book;
+import com.newtra.motivator.beans.Book;
 import com.newtra.motivator.R;
 
 import java.util.ArrayList;
