@@ -183,7 +183,7 @@ public final class VideoListActivity extends AppCompatActivity implements OnFull
         if (isFullscreen) {
             videoBox.setTranslationY(0); // Reset any translation that was applied in portrait.
             setLayoutSize(videoFragment.getView(), MATCH_PARENT, MATCH_PARENT);
-            setLayoutSizeAndGravity(videoBox, MATCH_PARENT, MATCH_PARENT, Gravity.TOP | Gravity.LEFT);
+            setLayoutSizeAndGravity(videoBox, MATCH_PARENT, MATCH_PARENT, Gravity.TOP | Gravity.RIGHT);
         } else if (isPortrait) {
             setLayoutSize(listFragment.getView(), MATCH_PARENT, MATCH_PARENT);
             setLayoutSize(videoFragment.getView(), MATCH_PARENT, WRAP_CONTENT);
@@ -195,7 +195,7 @@ public final class VideoListActivity extends AppCompatActivity implements OnFull
             int videoWidth = screenWidth - screenWidth / 4 - dpToPx(LANDSCAPE_VIDEO_PADDING_DP);
             setLayoutSize(videoFragment.getView(), videoWidth, WRAP_CONTENT);
             setLayoutSizeAndGravity(videoBox, videoWidth, WRAP_CONTENT,
-                    Gravity.RIGHT | Gravity.CENTER_VERTICAL);
+                    Gravity.END | Gravity.CENTER_VERTICAL);
         }
     }
 

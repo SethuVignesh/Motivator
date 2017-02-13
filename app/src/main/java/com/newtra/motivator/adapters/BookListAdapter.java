@@ -71,47 +71,8 @@ public class BookListAdapter extends BaseAdapter {
 		holder.rank.setText(worldpopulationlist.get(position).getTitle());
 		holder.country.setText(worldpopulationlist.get(position).getDescription());
 		holder.bookCover.setBackground(mContext.getResources().getDrawable(worldpopulationlist.get(position).getBookCoverId()));
-		
-		// Listen for ListView Item Click
-//		view.setOnClickListener(new OnClickListener() {
-//
-//			@Override
-//			public void onClick(View arg0) {
-//				// Send single item click data to SingleItemView Class
-//				Intent intent = new Intent(mContext, SingleItemView.class);
-//				// Pass all data rank
-//				intent.putExtra("rank",(worldpopulationlist.get(position).getRank()));
-//				// Pass all data country
-//				intent.putExtra("country",(worldpopulationlist.get(position).getCountry()));
-//				// Pass all data population
-//				intent.putExtra("population",(worldpopulationlist.get(position).getPopulation()));
-//				// Pass all data flag
-//				// Start SingleItemView Class
-//				mContext.startActivity(intent);
-//			}
-//		});
 
 		return view;
 	}
-
-	// Filter Class
-//	public void filter(String charText) {
-//		charText = charText.toLowerCase(Locale.getDefault());
-//		worldpopulationlist.clear();
-//		if (charText.length() == 0) {
-//			worldpopulationlist.addAll(arraylist);
-//		}
-//		else
-//		{
-//			for (Book wp : arraylist)
-//			{
-//				if (wp.toLowerCase(Locale.getDefault()).contains(charText))
-//				{
-//					worldpopulationlist.add(wp);
-//				}
-//			}
-//		}
-//		notifyDataSetChanged();
-//	}
 
 }

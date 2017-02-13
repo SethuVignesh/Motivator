@@ -1,6 +1,15 @@
 apply plugin: 'com.android.application'
 
 android {
+    signingConfigs {
+        config {
+            keyAlias 'SriKrish'
+            keyPassword 'Newtra123'
+//            storeFile file('/Users/sethu/Downloads/Motivator/appkey.jks')
+            storeFile file('../keystore/appkey.jks')
+            storePassword 'Newtra123'
+        }
+    }
     compileSdkVersion 25
     buildToolsVersion "25.0.2"
     defaultConfig {
@@ -15,6 +24,7 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
         }
     }
 }

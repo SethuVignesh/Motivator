@@ -16,7 +16,7 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 import com.newtra.motivator.AudioModule.DownloadAudio;
-import com.newtra.motivator.AudioModule.refreshListView;
+import com.newtra.motivator.AudioModule.RefreshListView;
 import com.newtra.motivator.Beans.Audio;
 import com.newtra.motivator.R;
 import com.newtra.motivator.Utility;
@@ -29,7 +29,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 
-public class AudioFragment extends Fragment implements refreshListView {
+public class AudioFragment extends Fragment implements RefreshListView {
     public static final String STEVEJOBS = "stevejobs";
     public static final String ARNOLD = "arnold";
     public static final String WILLSMITH = "willsmith";
@@ -127,7 +127,7 @@ public class AudioFragment extends Fragment implements refreshListView {
                         }
                     } else {
                         mp.setDataSource(metaDataList.get(position).getDownloadURL());
-                        Toast.makeText(getActivity(),"Please wait, audio file is downloading",Toast.LENGTH_LONG).show();
+                        Toast.makeText(getActivity(), R.string.audioDownloadProgress,Toast.LENGTH_LONG).show();
                     }
                     mp.prepare();
                     mp.start();

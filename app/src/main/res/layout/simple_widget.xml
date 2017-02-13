@@ -9,6 +9,7 @@
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="1"
+        android:contentDescription="@string/logo"
         android:src="@drawable/logo"/>
 
     <TextView
@@ -17,7 +18,7 @@
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:gravity="center"
-        android:text="000"
+        android:text="@string/_000"
         android:textSize="@dimen/abc_text_size_large_material"
         android:textStyle="bold"
         android:visibility="gone"/>
@@ -27,7 +28,7 @@
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="1"
-        android:text="Refresh"
+        android:text="@string/refresh"
         android:visibility="gone"/>
 
 </LinearLayout>

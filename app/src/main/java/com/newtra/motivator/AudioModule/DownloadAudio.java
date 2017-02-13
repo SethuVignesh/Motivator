@@ -28,11 +28,11 @@ public class DownloadAudio extends AsyncTask<String, Void, Void> {
     private Context mContext;
     private MotivatorDBHelper dbHelper;
     SQLiteDatabase db;
-    //    private refreshListView = new AudioActivity();
+    //    private RefreshListView = new AudioActivity();
     ArrayList<Audio> audioArrayList;
     private String TAG = DownloadAudio.class.getSimpleName();
     SharedPreferences prefs;
-    private refreshListView mRefreshListView = new AudioFragment();
+    private RefreshListView mRefreshListView = new AudioFragment();
 
     public DownloadAudio(Context mContext, ArrayList<Audio> audioArrayList) {
         this.mContext = mContext;
