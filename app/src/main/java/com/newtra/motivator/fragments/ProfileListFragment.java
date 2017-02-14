@@ -16,7 +16,7 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.GridView;
 
-import com.newtra.motivator.beans.Flavor;
+import com.newtra.motivator.beanobject.Flavor;
 import com.newtra.motivator.R;
 import com.newtra.motivator.activity.DetailActivity;
 import com.newtra.motivator.adapters.FlavorAdapter;

@@ -15,9 +15,10 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
 
-import com.newtra.motivator.audiomodule.DownloadAudio;
-import com.newtra.motivator.audiomodule.RefreshListView;
-import com.newtra.motivator.beans.Audio;
+import com.newtra.motivator.audiomoduletemp.RefreshAudioListView;
+import com.newtra.motivator.audiomoduletemp.DownloadAudio;
+import com.newtra.motivator.audiomoduletemp.RefreshAudioListView;
+import com.newtra.motivator.beanobject.Audio;
 import com.newtra.motivator.R;
 import com.newtra.motivator.Utility;
 import com.newtra.motivator.adapters.AudioListAdapter;
@@ -29,7 +30,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 
-public class AudioFragment extends Fragment implements RefreshListView {
+public class AudioFragment extends Fragment implements RefreshAudioListView {
     public static final String STEVEJOBS = "stevejobs";
     public static final String ARNOLD = "arnold";
     public static final String WILLSMITH = "willsmith";

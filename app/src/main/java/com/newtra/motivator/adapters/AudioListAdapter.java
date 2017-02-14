@@ -7,7 +7,7 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
-import com.newtra.motivator.beans.Audio;
+import com.newtra.motivator.beanobject.Audio;
 import com.newtra.motivator.R;
 
 import java.util.ArrayList;

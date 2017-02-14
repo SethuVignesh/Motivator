@@ -1,4 +1,4 @@
-package com.newtra.motivator.AudioModule;
+package com.newtra.motivator.audiomoduletemp;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -8,9 +8,9 @@ import android.os.AsyncTask;
 import android.preference.PreferenceManager;
 import android.util.Log;
 
-import com.newtra.motivator.Beans.Audio;
 import com.newtra.motivator.Constants;
 import com.newtra.motivator.Utility;
+import com.newtra.motivator.beanobject.Audio;
 import com.newtra.motivator.data.MotivatorContract;
 import com.newtra.motivator.data.MotivatorDBHelper;
 import com.newtra.motivator.fragments.AudioFragment;
@@ -28,11 +28,11 @@ public class DownloadAudio extends AsyncTask<String, Void, Void> {
     private Context mContext;
     private MotivatorDBHelper dbHelper;
     SQLiteDatabase db;
-    //    private RefreshListView = new AudioActivity();
+    //    private RefreshAudioListView = new AudioActivity();
     ArrayList<Audio> audioArrayList;
     private String TAG = DownloadAudio.class.getSimpleName();
     SharedPreferences prefs;
-    private RefreshListView mRefreshListView = new AudioFragment();
+    private RefreshAudioListView mRefreshAudioListView = new AudioFragment();
 
     public DownloadAudio(Context mContext, ArrayList<Audio> audioArrayList) {
         this.mContext = mContext;
@@ -119,7 +119,7 @@ public class DownloadAudio extends AsyncTask<String, Void, Void> {
 
 
             db.update(MotivatorContract.MotivatorEntry.TABLE_AUDIO, args, MotivatorContract.MotivatorEntry._ID + "=" + metadata.getAudioId(), null);
-            mRefreshListView.refreshList(mContext, Constants.REFRESH_DOWNLAODED_AUDIO);
+            mRefreshAudioListView.refreshList(mContext, Constants.REFRESH_DOWNLAODED_AUDIO);
 //            Log.d("AsnynTask", "Audio Download optimise :Audio file store at  AsyncTask" + filePathLink);
 
         } catch (Exception e) {

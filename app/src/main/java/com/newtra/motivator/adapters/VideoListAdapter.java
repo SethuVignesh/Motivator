@@ -8,7 +8,7 @@ import android.widget.BaseAdapter;
 import android.widget.TextView;
 
 
-import com.newtra.motivator.beans.VideoList;
+import com.newtra.motivator.beanobject.VideoList;
 import com.newtra.motivator.R;
 
 import java.util.ArrayList;

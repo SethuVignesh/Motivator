@@ -14,7 +14,7 @@ import android.widget.ListView;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.MobileAds;
-import com.newtra.motivator.beans.VideoList;
+import com.newtra.motivator.beanobject.VideoList;
 import com.newtra.motivator.R;
 import com.newtra.motivator.activity.VideoListActivity;
 import com.newtra.motivator.adapters.VideoListAdapter;

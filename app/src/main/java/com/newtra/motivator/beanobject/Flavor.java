@@ -1,4 +1,4 @@
-package com.newtra.motivator.beans;
+package com.newtra.motivator.beanobject;
 
 /**
  * Created by sam_chordas on 7/23/15.
