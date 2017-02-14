@@ -157,7 +157,7 @@ public class AudioFragment extends Fragment implements RefreshListView {
 
 
     @Override
-    public void RefreshList(Context context, String caller) {
+    public void refreshList(Context context, String caller) {
         populateListView();
 
     }

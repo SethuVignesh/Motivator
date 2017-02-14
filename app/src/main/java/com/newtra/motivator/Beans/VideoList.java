@@ -1,4 +1,4 @@
-package com.newtra.motivator.Beans;
+package com.newtra.motivator.beans;
 
 /**
  * Created by sethu on 3/3/2016.
