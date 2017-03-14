@@ -15,12 +15,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.widget.TextView;
 
-
 import com.newtra.motivator.R;
 import com.newtra.motivator.fragments.AudioFragment;
-import com.newtra.motivator.fragments.BooksFragment;
-import com.newtra.motivator.fragments.ProfileListFragment;
-import com.newtra.motivator.fragments.YoutubeFragment;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -54,7 +50,8 @@ public class HomeActivity extends AppCompatActivity {
         super.onResume();
         isStoragePermissionGranted();
     }
-    public  boolean isStoragePermissionGranted() {
+
+    public boolean isStoragePermissionGranted() {
         if (Build.VERSION.SDK_INT >= 23) {
             if (checkSelfPermission(android.Manifest.permission.WRITE_EXTERNAL_STORAGE)
                     == PackageManager.PERMISSION_GRANTED) {
@@ -69,7 +66,7 @@ public class HomeActivity extends AppCompatActivity {
         }
 //        else { //permission is automatically granted on sdk<23 upon installation
 //            Log.v(TAG,"Permission is granted");
-            return true;
+        return true;
 
     }
 
@@ -109,11 +106,11 @@ public class HomeActivity extends AppCompatActivity {
      */
     private void setupViewPager(ViewPager viewPager) {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
-        adapter.addFrag(new YoutubeFragment(), getResources().getString(R.string.youtube));
+//        adapter.addFrag(new YoutubeFragment(), getResources().getString(R.string.youtube));
 //        adapter.addFrag(new AudioFragment(), "VIDEOS");
-        adapter.addFrag(new BooksFragment(),getResources().getString( R.string.book));
+//        adapter.addFrag(new BooksFragment(),getResources().getString( R.string.book));
         adapter.addFrag(new AudioFragment(), getResources().getString(R.string.audio));
-        adapter.addFrag(new ProfileListFragment(), getResources().getString(R.string.profile));
+//        adapter.addFrag(new ProfileListFragment(), getResources().getString(R.string.profile));
         viewPager.setAdapter(adapter);
     }
 
