@@ -142,94 +142,95 @@ public class DemoData {
         testValues = new ContentValues();
         testValues.put(MotivatorContract.MotivatorEntry.COLUMN_AUDIO_NAME, "Arnold Schwarzenegger - Gym Motivation - Motivational Speech");
         testValues.put(MotivatorContract.MotivatorEntry.COLUMN_LOCATION_IN_LOCAL, "");
-        testValues.put(MotivatorContract.MotivatorEntry.COLUMN_AUDIO_URL, "https://github.com/SethuVignesh/Motivator/raw/master/audio/Arnold%20Schwarzenegger%20-%20Gym%20Motivation%20-%20Motivational%20Speech.mp3");
+        testValues.put(MotivatorContract.MotivatorEntry.COLUMN_AUDIO_URL, "https://github.com/SethuVignesh/MotivatorFilesRepo/blob/master/audio/Arnold%20Schwarzenegger%20-%20Gym%20Motivation%20-%20Motivational%20Speech.mp3?raw=true");
         testValues.put(MotivatorContract.MotivatorEntry.COLUMN_AUDIO_AVAILABILITY, MotivatorDBHelper.AUDIO_UNAVAILABLE);
 
         audioDataList.add(testValues);
         testValues = new ContentValues();
         testValues.put(MotivatorContract.MotivatorEntry.COLUMN_AUDIO_NAME, "BrianTracy_Goals_Disk01");
         testValues.put(MotivatorContract.MotivatorEntry.COLUMN_LOCATION_IN_LOCAL, "");
-        testValues.put(MotivatorContract.MotivatorEntry.COLUMN_AUDIO_URL, "https://github.com/SethuVignesh/Motivator/raw/master/audio/BrianTracy_Goals_Disk01.mp3");
+        testValues.put(MotivatorContract.MotivatorEntry.COLUMN_AUDIO_URL, "https://github.com/SethuVignesh/MotivatorFilesRepo/blob/master/audio/BrianTracy_Goals_Disk01.mp3?raw=true");
         testValues.put(MotivatorContract.MotivatorEntry.COLUMN_AUDIO_AVAILABILITY, MotivatorDBHelper.AUDIO_UNAVAILABLE);
         audioDataList.add(testValues);
         testValues = new ContentValues();
         testValues.put(MotivatorContract.MotivatorEntry.COLUMN_AUDIO_NAME, "Entrepreneur [ the Self Made ] Epic Motivational Speech.mp3");
         testValues.put(MotivatorContract.MotivatorEntry.COLUMN_LOCATION_IN_LOCAL, "");
-        testValues.put(MotivatorContract.MotivatorEntry.COLUMN_AUDIO_URL, "https://github.com/SethuVignesh/Motivator/raw/master/audio/Entrepreneur%20%5B%20the%20Self%20Made%20%5D%20Epic%20Motivational%20Speech.mp3");
+        testValues.put(MotivatorContract.MotivatorEntry.COLUMN_AUDIO_URL, "https://github.com/SethuVignesh/MotivatorFilesRepo/blob/master/audio/Entrepreneur%20%5B%20the%20Self%20Made%20%5D%20Epic%20Motivational%20Speech.mp3?raw=true");
         testValues.put(MotivatorContract.MotivatorEntry.COLUMN_AUDIO_AVAILABILITY, MotivatorDBHelper.AUDIO_UNAVAILABLE);
         audioDataList.add(testValues);
         testValues = new ContentValues();
         testValues.put(MotivatorContract.MotivatorEntry.COLUMN_AUDIO_NAME, "How To OVERCOME Failure & Make an IMPACT - Motivational Video 2017.mp3");
         testValues.put(MotivatorContract.MotivatorEntry.COLUMN_LOCATION_IN_LOCAL, "");
-        testValues.put(MotivatorContract.MotivatorEntry.COLUMN_AUDIO_URL, "https://github.com/SethuVignesh/Motivator/raw/master/audio/How%20To%20OVERCOME%20Failure%20%26%20Make%20an%20IMPACT%20-%20Motivational%20Video%202017.mp3");
+        testValues.put(MotivatorContract.MotivatorEntry.COLUMN_AUDIO_URL, "https://github.com/SethuVignesh/MotivatorFilesRepo/blob/master/audio/How%20To%20OVERCOME%20Failure%20&%20Make%20an%20IMPACT%20-%20Motivational%20Video%202017.mp3?raw=true");
         testValues.put(MotivatorContract.MotivatorEntry.COLUMN_AUDIO_AVAILABILITY, MotivatorDBHelper.AUDIO_UNAVAILABLE);
         audioDataList.add(testValues);
 
         testValues = new ContentValues();
         testValues.put(MotivatorContract.MotivatorEntry.COLUMN_AUDIO_NAME, "IT'S TIME TO CHANGE - 2017 New Years Motivation.mp3");
         testValues.put(MotivatorContract.MotivatorEntry.COLUMN_LOCATION_IN_LOCAL, "");
-        testValues.put(MotivatorContract.MotivatorEntry.COLUMN_AUDIO_URL, "https://github.com/SethuVignesh/Motivator/raw/master/audio/IT'S%20TIME%20TO%20CHANGE%20-%202017%20New%20Years%20Motivation.mp3");
+        testValues.put(MotivatorContract.MotivatorEntry.COLUMN_AUDIO_URL, "https://github.com/SethuVignesh/MotivatorFilesRepo/blob/master/audio/IT'S%20TIME%20TO%20CHANGE%20-%202017%20New%20Years%20Motivation.mp3?raw=true");
         testValues.put(MotivatorContract.MotivatorEntry.COLUMN_AUDIO_AVAILABILITY, MotivatorDBHelper.AUDIO_UNAVAILABLE);
         audioDataList.add(testValues);
 
         testValues = new ContentValues();
         testValues.put(MotivatorContract.MotivatorEntry.COLUMN_AUDIO_NAME, "Lone Wolf - Motivational Video For All Those Fighting Battles Alone.mp3");
         testValues.put(MotivatorContract.MotivatorEntry.COLUMN_LOCATION_IN_LOCAL, "");
-        testValues.put(MotivatorContract.MotivatorEntry.COLUMN_AUDIO_URL, "https://github.com/SethuVignesh/Motivator/raw/master/audio/Lone%20Wolf%20-%20Motivational%20Video%20For%20All%20Those%20Fighting%20Battles%20Alone.mp3\n");
+        testValues.put(MotivatorContract.MotivatorEntry.COLUMN_AUDIO_URL, "https://github.com/SethuVignesh/MotivatorFilesRepo/blob/master/audio/Lone%20Wolf%20-%20Motivational%20Video%20For%20All%20Those%20Fighting%20Battles%20Alone.mp3?raw=true");
         testValues.put(MotivatorContract.MotivatorEntry.COLUMN_AUDIO_AVAILABILITY, MotivatorDBHelper.AUDIO_UNAVAILABLE);
         audioDataList.add(testValues);
         testValues = new ContentValues();
         testValues.put(MotivatorContract.MotivatorEntry.COLUMN_AUDIO_NAME, "Most People Motivational Video For The Minority.mp3");
         testValues.put(MotivatorContract.MotivatorEntry.COLUMN_LOCATION_IN_LOCAL, "");
-        testValues.put(MotivatorContract.MotivatorEntry.COLUMN_AUDIO_URL, "https://github.com/SethuVignesh/Motivator/raw/master/audio/Most%20People%20Motivational%20Video%20For%20The%20Minority.mp3");
+        testValues.put(MotivatorContract.MotivatorEntry.COLUMN_AUDIO_URL, "https://github.com/SethuVignesh/MotivatorFilesRepo/blob/master/audio/Most%20People%20Motivational%20Video%20For%20The%20Minority.mp3?raw=true");
         testValues.put(MotivatorContract.MotivatorEntry.COLUMN_AUDIO_AVAILABILITY, MotivatorDBHelper.AUDIO_UNAVAILABLE);
         audioDataList.add(testValues);
         testValues = new ContentValues();
         testValues.put(MotivatorContract.MotivatorEntry.COLUMN_AUDIO_NAME, "RITheThreeMajorObstaclestoGrowthaccordingtoBrianTracyJune132009.mp3");
         testValues.put(MotivatorContract.MotivatorEntry.COLUMN_LOCATION_IN_LOCAL, "");
-        testValues.put(MotivatorContract.MotivatorEntry.COLUMN_AUDIO_URL, "https://github.com/SethuVignesh/Motivator/raw/master/audio/RITheThreeMajorObstaclestoGrowthaccordingtoBrianTracyJune132009.mp3");
+        testValues.put(MotivatorContract.MotivatorEntry.COLUMN_AUDIO_URL, "https://github.com/SethuVignesh/MotivatorFilesRepo/blob/master/audio/RITheThreeMajorObstaclestoGrowthaccordingtoBrianTracyJune132009.mp3?raw=true");
         testValues.put(MotivatorContract.MotivatorEntry.COLUMN_AUDIO_AVAILABILITY, MotivatorDBHelper.AUDIO_UNAVAILABLE);
         audioDataList.add(testValues);
 
         testValues = new ContentValues();
         testValues.put(MotivatorContract.MotivatorEntry.COLUMN_AUDIO_NAME, "THE BILLIONAIRE MINDSET - Motivational Video (from the great achievers of the world).mp3");
         testValues.put(MotivatorContract.MotivatorEntry.COLUMN_LOCATION_IN_LOCAL, "");
-        testValues.put(MotivatorContract.MotivatorEntry.COLUMN_AUDIO_URL, "https://github.com/SethuVignesh/Motivator/raw/master/audio/THE%20BILLIONAIRE%20MINDSET%20-%20Motivational%20Video%20(from%20the%20great%20achievers%20of%20the%20world).mp3");
+        testValues.put(MotivatorContract.MotivatorEntry.COLUMN_AUDIO_URL, "https://github.com/SethuVignesh/MotivatorFilesRepo/blob/master/audio/THE%20BILLIONAIRE%20MINDSET%20-%20Motivational%20Video%20(from%20the%20great%20achievers%20of%20the%20world).mp3?raw=true");
         testValues.put(MotivatorContract.MotivatorEntry.COLUMN_AUDIO_AVAILABILITY, MotivatorDBHelper.AUDIO_UNAVAILABLE);
         audioDataList.add(testValues);
 
         testValues = new ContentValues();
         testValues.put(MotivatorContract.MotivatorEntry.COLUMN_AUDIO_NAME, "THE MINDSET BEHIND SUCCESS - Motivational Video.mp3");
         testValues.put(MotivatorContract.MotivatorEntry.COLUMN_LOCATION_IN_LOCAL, "");
-        testValues.put(MotivatorContract.MotivatorEntry.COLUMN_AUDIO_URL, "https://github.com/SethuVignesh/Motivator/raw/master/audio/THE%20MINDSET%20BEHIND%20SUCCESS%20-%20Motivational%20Video.mp3");
+        testValues.put(MotivatorContract.MotivatorEntry.COLUMN_AUDIO_URL, "https://github.com/SethuVignesh/MotivatorFilesRepo/blob/master/audio/THE%20MINDSET%20BEHIND%20SUCCESS%20-%20Motivational%20Video.mp3?raw=true");
         testValues.put(MotivatorContract.MotivatorEntry.COLUMN_AUDIO_AVAILABILITY, MotivatorDBHelper.AUDIO_UNAVAILABLE);
         audioDataList.add(testValues);
 
         testValues = new ContentValues();
         testValues.put(MotivatorContract.MotivatorEntry.COLUMN_AUDIO_NAME, "THEY WERE WRONG - Motivational Video.mp3");
         testValues.put(MotivatorContract.MotivatorEntry.COLUMN_LOCATION_IN_LOCAL, "");
-        testValues.put(MotivatorContract.MotivatorEntry.COLUMN_AUDIO_URL, "https://github.com/SethuVignesh/Motivator/raw/master/audio/THEY%20WERE%20WRONG%20-%20Motivational%20Video.mp3");
+        testValues.put(MotivatorContract.MotivatorEntry.COLUMN_AUDIO_URL, "https://github.com/SethuVignesh/MotivatorFilesRepo/blob/master/audio/THEY%20WERE%20WRONG%20-%20Motivational%20Video.mp3?raw=true");
         testValues.put(MotivatorContract.MotivatorEntry.COLUMN_AUDIO_AVAILABILITY, MotivatorDBHelper.AUDIO_UNAVAILABLE);
         audioDataList.add(testValues);
 
         testValues = new ContentValues();
         testValues.put(MotivatorContract.MotivatorEntry.COLUMN_AUDIO_NAME, "The Hero In You - Motivational Video.mp3");
         testValues.put(MotivatorContract.MotivatorEntry.COLUMN_LOCATION_IN_LOCAL, "");
-        testValues.put(MotivatorContract.MotivatorEntry.COLUMN_AUDIO_URL, "https://github.com/SethuVignesh/Motivator/raw/master/audio/The%20Hero%20In%20You%20-%20Motivational%20Video.mp3");
+        testValues.put(MotivatorContract.MotivatorEntry.COLUMN_AUDIO_URL, "https://github.com/SethuVignesh/MotivatorFilesRepo/blob/master/audio/The%20Hero%20In%20You%20-%20Motivational%20Video.mp3?raw=true");
         testValues.put(MotivatorContract.MotivatorEntry.COLUMN_AUDIO_AVAILABILITY, MotivatorDBHelper.AUDIO_UNAVAILABLE);
         audioDataList.add(testValues);
 
         testValues = new ContentValues();
         testValues.put(MotivatorContract.MotivatorEntry.COLUMN_AUDIO_NAME, "The Lion Attitude (HEART OF A LION) Motivational Video.mp3");
         testValues.put(MotivatorContract.MotivatorEntry.COLUMN_LOCATION_IN_LOCAL, "");
-        testValues.put(MotivatorContract.MotivatorEntry.COLUMN_AUDIO_URL, "https://github.com/SethuVignesh/Motivator/raw/master/audio/The%20Lion%20Attitude%20(HEART%20OF%20A%20LION)%20Motivational%20Video.mp3");
+        testValues.put(MotivatorContract.MotivatorEntry.COLUMN_AUDIO_URL, "https://github.com/SethuVignesh/MotivatorFilesRepo/blob/master/audio/The%20Lion%20Attitude%20(HEART%20OF%20A%20LION)%20Motivational%20Video.mp3?raw=true");
         testValues.put(MotivatorContract.MotivatorEntry.COLUMN_AUDIO_AVAILABILITY, MotivatorDBHelper.AUDIO_UNAVAILABLE);
         audioDataList.add(testValues);
 
         testValues = new ContentValues();
         testValues.put(MotivatorContract.MotivatorEntry.COLUMN_AUDIO_NAME, "rich-dad_64kb.mp3");
         testValues.put(MotivatorContract.MotivatorEntry.COLUMN_LOCATION_IN_LOCAL, "");
-        testValues.put(MotivatorContract.MotivatorEntry.COLUMN_AUDIO_URL, "https://github.com/SethuVignesh/Motivator/raw/master/audio/rich-dad_64kb.mp3");
+
+        testValues.put(MotivatorContract.MotivatorEntry.COLUMN_AUDIO_URL, " https://raw.githubusercontent.com/SethuVignesh/MotivatorFilesRepo/master/audio/rich-dad_64kb.mp3");
         testValues.put(MotivatorContract.MotivatorEntry.COLUMN_AUDIO_AVAILABILITY, MotivatorDBHelper.AUDIO_UNAVAILABLE);
         audioDataList.add(testValues);
 

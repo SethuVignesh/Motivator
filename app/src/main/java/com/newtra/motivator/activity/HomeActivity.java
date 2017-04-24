@@ -81,20 +81,20 @@ public class HomeActivity extends AppCompatActivity {
         tabLayout.getTabAt(0).setCustomView(tabOne);
 
 
-        TextView tabThree = (TextView) LayoutInflater.from(this).inflate(R.layout.custom_tab, null);
-        tabThree.setText(R.string.book);
-        tabThree.setCompoundDrawablesWithIntrinsicBounds(0, R.drawable.ic_tab_contacts, 0, 0);
-        tabLayout.getTabAt(1).setCustomView(tabThree);
+//        TextView tabThree = (TextView) LayoutInflater.from(this).inflate(R.layout.custom_tab, null);
+//        tabThree.setText(R.string.book);
+//        tabThree.setCompoundDrawablesWithIntrinsicBounds(0, R.drawable.ic_tab_contacts, 0, 0);
+//        tabLayout.getTabAt(1).setCustomView(tabThree);
+//
+//        TextView tabTwo = (TextView) LayoutInflater.from(this).inflate(R.layout.custom_tab, null);
+//        tabTwo.setText(R.string.audio);
+//        tabTwo.setCompoundDrawablesWithIntrinsicBounds(0, R.drawable.ic_tab_contacts, 0, 0);
+//        tabLayout.getTabAt(2).setCustomView(tabTwo);
 
-        TextView tabTwo = (TextView) LayoutInflater.from(this).inflate(R.layout.custom_tab, null);
-        tabTwo.setText(R.string.audio);
-        tabTwo.setCompoundDrawablesWithIntrinsicBounds(0, R.drawable.ic_tab_contacts, 0, 0);
-        tabLayout.getTabAt(2).setCustomView(tabTwo);
-
-        TextView tabFour = (TextView) LayoutInflater.from(this).inflate(R.layout.custom_tab, null);
-        tabFour.setText(R.string.profile);
-        tabFour.setCompoundDrawablesWithIntrinsicBounds(0, R.drawable.ic_tab_contacts, 0, 0);
-        tabLayout.getTabAt(3).setCustomView(tabFour);
+//        TextView tabFour = (TextView) LayoutInflater.from(this).inflate(R.layout.custom_tab, null);
+//        tabFour.setText(R.string.profile);
+//        tabFour.setCompoundDrawablesWithIntrinsicBounds(0, R.drawable.ic_tab_contacts, 0, 0);
+//        tabLayout.getTabAt(3).setCustomView(tabFour);
 
 
     }
