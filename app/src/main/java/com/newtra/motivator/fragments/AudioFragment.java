@@ -2,6 +2,7 @@ package com.newtra.motivator.fragments;
 
 import android.app.ProgressDialog;
 import android.content.Context;
+import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.media.MediaPlayer;
@@ -15,6 +16,8 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import com.newtra.motivator.Constants2;
+import com.newtra.motivator.NotificationService;
 import com.newtra.motivator.audiomoduletemp.RefreshAudioListView;
 import com.newtra.motivator.audiomoduletemp.DownloadAudio;
 import com.newtra.motivator.audiomoduletemp.RefreshAudioListView;
@@ -28,6 +31,7 @@ import com.newtra.motivator.data.MotivatorDBHelper;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.concurrent.ExecutionException;
 
 
 public class AudioFragment extends Fragment implements RefreshAudioListView {
@@ -112,28 +116,29 @@ public class AudioFragment extends Fragment implements RefreshAudioListView {
 //                startDownload(mStoreListNames.get(position).getUrl(),mStoreListNames.get(position).getTitle());
                 view.setSelected(true);
                 selectedLanguage = metaDataList.get(position).getAudioName();
-                if (mp != null && mp.isPlaying()) {
-                    mp.stop();
-                    mp.release();
-                    mp = null;
-                }
-                mp = new MediaPlayer();
-
+//                if (mp != null && mp.isPlaying()) {
+//                    mp.stop();
+//                    mp.release();
+//                    mp = null;
+//                }
+//                mp = new MediaPlayer();
+//
                 try {
-                    if (metaDataList.get(position).getFileAvailabilityInLocalMmy().equals(Audio.AVAILABLE)) {
-                        if (metaDataList.get(position).getLocation().trim().length() > 0) {
-                            String filePathLink;// = Environment.getExternalStorageDirectory().getAbsolutePath() + "/"+worldpopulationlist.get(position).getLocation();
-                            filePathLink = Utility.getFilePathOnMobile(getActivity(), metaDataList.get(position).getLocation());
-                            mp.setDataSource(getActivity(), Uri.parse(filePathLink));
-                        }
-                    } else {
-                        mp.setDataSource(metaDataList.get(position).getDownloadURL());
-                        Toast.makeText(getActivity(), R.string.audioDownloadProgress,Toast.LENGTH_LONG).show();
-                    }
-                    mp.prepare();
-                    mp.start();
+//                    if (metaDataList.get(position).getFileAvailabilityInLocalMmy().equals(Audio.AVAILABLE)) {
+//                        if (metaDataList.get(position).getLocation().trim().length() > 0) {
+//                            String filePathLink;// = Environment.getExternalStorageDirectory().getAbsolutePath() + "/"+worldpopulationlist.get(position).getLocation();
+//                            filePathLink = Utility.getFilePathOnMobile(getActivity(), metaDataList.get(position).getLocation());
+//                            mp.setDataSource(getActivity(), Uri.parse(filePathLink));
+//                        }
+//                    } else {
+//                        mp.setDataSource(metaDataList.get(position).getDownloadURL());
+//                        Toast.makeText(getActivity(), R.string.audioDownloadProgress,Toast.LENGTH_LONG).show();
+//                    }
+//                    mp.prepare();
+//                    mp.start();
+                    startService(metaDataList.get(position));
 
-                } catch (IOException e) {
+                } catch (Exception e) {
                     e.printStackTrace();
                 }
 
@@ -147,7 +152,12 @@ public class AudioFragment extends Fragment implements RefreshAudioListView {
         super.onPause();
         stopAudio();
     }
-
+    public void startService(Audio audio) {
+        Intent serviceIntent = new Intent(getActivity(), NotificationService.class);
+        serviceIntent.setAction(Constants2.ACTION.STARTFOREGROUND_ACTION);
+        serviceIntent.putExtra("audioMetadata",audio);
+        getActivity().startService(serviceIntent);
+    }
     @Override
     public void setUserVisibleHint(boolean isVisibleToUser) {
         super.setUserVisibleHint(isVisibleToUser);
